@@ -4,15 +4,15 @@ local myHeroPos = nil
 function AfterObjectLoopEvent(myHer0)
     myHero = myHer0
     myHeroPos = GetOrigin(myHero)
-		DrawText("HookCity By: IMCOOL",24,0,0,0xffff0000);
+		DrawText("HookCity By:IMCOOL.",24,0,0,0xffff0000);
 	
 	local target = GetCurrentTarget()
 	if KeyIsDown(0x20) then 
 	    if ValidTarget(target, 1100) then
-			if CanUseSpell(myHero, _Q) == READY and GetDistance(GetOrigin(target), GetOrigin(myHero)) < 1040*1040 then
+			if CanUseSpell(myHero, _Q) == READY and GetDistance(GetOrigin(target), GetOrigin(myHero)) < 1100*1100 then
 				CastTargetSpell(target, _Q)
 			end
-			if CanUseSpell(myHero, _E) == READY and GetDistance(GetOrigin(target), GetOrigin(myHero)) < 360*360 then
+			if CanUseSpell(myHero, _E) == READY and GetDistance(GetOrigin(target), GetOrigin(myHero)) < 400*400 then
 				CastTargetSpell(target, _E)
 			end
 	  	end
