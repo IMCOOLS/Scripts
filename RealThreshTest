@@ -8,12 +8,9 @@ function AfterObjectLoopEvent(myHer0)
 	
 	local target = GetCurrentTarget()
 	if KeyIsDown(0x20) then 
-	    if ValidTarget(target, 1100) then
-			if CanUseSpell(myHero, _Q) == READY and GetDistance(GetOrigin(target), GetOrigin(myHero)) < 1100*1100 then
+	    if ValidTarget(target, 1075) then
+			if CanUseSpell(myHero, _Q) == READY and GetDistance(GetOrigin(target), GetOrigin(myHero)) < 1175*1075 then
 				CastTargetSpell(target, _Q)
-			end
-			if CanUseSpell(myHero, _E) == READY and GetDistance(GetOrigin(target), GetOrigin(myHero)) < 400*400 then
-				CastTargetSpell(target, _E)
 			end
 	  	end
 	end	
