@@ -4,7 +4,7 @@ local myHeroPos = nil
 function AfterObjectLoopEvent(myHer0)
     myHero = myHer0
     myHeroPos = GetOrigin(myHero)
-		DrawText("Thresh Script by IMCOOL.",24,0,0,0xffff000);
+		DrawText("HookCity By:IMCOOL.",24,0,0,0xffff0000);
 	
 	local target = GetCurrentTarget()
 	if KeyIsDown(0x20) then 
